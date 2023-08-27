@@ -11,6 +11,8 @@ const getDataFromUrl = async (url) => {
     } catch (error) {
         console.log(error)
         throw error;
+    } finally {
+        console.log("=====> Hello")
     }
 }
 
