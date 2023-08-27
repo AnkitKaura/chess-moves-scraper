@@ -6,6 +6,6 @@ This application basically scraps data from URL and show the given data.
 
 In order to install and run take clone and then run
 ```
-npm install 
-npm run start
+npm install or yarn
+npm run start or yarn run start
 ``` 
