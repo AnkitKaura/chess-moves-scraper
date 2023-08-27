@@ -5,10 +5,12 @@ let EcoData = {};
 const getDataFromUrl = async (url) => {
     try {
         const response = await axios.get(url);
-        await extractCustomResponse(response.data)
+        await extractCustomResponse(response.data);
+        console.log('Fetching data completed');
         return response.data;
     } catch (error) {
         console.log(error)
+        throw error;
     }
 }
 
