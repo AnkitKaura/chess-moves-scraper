@@ -10,6 +10,9 @@ const getDataFromUrl = async (url) => {
         return response.data;
     } catch (error) {
         console.log(error)
+        throw error;
+    } finally {
+        console.log("=====> Hello")
     }
 }
 
